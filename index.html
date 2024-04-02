@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript" src="scripts/parallax.js"></script>
+  <script type="text/javascript" src="scripts/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+  <script>
+
+  window.addEventListener('load', iniciar, false);
+
+
+  function iniciar(){
+    var scene = document.getElementsByClassName('scene');
+    var parallax = new Parallax(scene[0]);
+    var parallax1 = new Parallax(scene[1]);
+  }
+
+</script>
+
+</head>
+<body>
+
+<!--Texto Separador-->
+
+  <div class="entre-contenedor">
+    <h1>Parallax simple</h1>
+  </div>
+
+<!--Parallax Simple-->
+
+  <div id="contenedor1"></div>
+
+<!--Texto Separador-->
+
+  <div class="entre-contenedor">
+      <h1>Parallax compuesto</h1>
+  </div>
+
+<!--Parallax Compuesto-->
+
+  <div id="contenedor2">
+      <ul class="scene">
+        <li class="layer" data-depth="0.50"><img src="images/planeta-grande.png" alt="" /></li>
+        <li class="layer" data-depth="5.00"><img src="images/planeta-pequeño.png" alt="" /></li>
+      </ul>
+  </div>
+
+<!--Texto Separador-->
+
+  <div class="entre-contenedor">
+    <h1>Parallax con texto</h1>
+  </div>
+
+<!--Parallax Con Texto-->
+
+  <div id="contenedor3">
+    <h1>Texto de prueba</h1>
+  </div>
+
+<!--Texto Separador-->
+
+  <div class="entre-contenedor">
+    <h1>Parallax con texto compuesto</h1>
+  </div>
+
+<!--Parallax con Texto Compuesto -->
+
+    <div id="contenedor4">
+      <ul class="scene">
+        <li class="layer" data-depth="0.30">
+          <h1>Texto de prueba</h1>
+        </li>
+      </ul>
+    </div>
+</body>
+</html>
